@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+@import "tailwindcss";
+@import "tailwindcss-primeui";
+body {
+  margin: 0;
+  display: block;
+  font-family: "Times New Roman", serif;
+  position: relative;
+  background-color: #f7f1e1;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overscroll-behavior: none;
+}
+
+.text-ternary {
+  color: rgba(17,17,17,.6);
+  @apply text-lg;
+}
+
+.bg-light {
+  background-color: #f7f1e1;
+}
+
+body.overflow-hidden {
+  overflow: hidden;
+}
+
+.section {
+  @apply flex flex-col gap-10;
+}
+
+.sub-header {
+  @apply text-3xl;
+}
+
+

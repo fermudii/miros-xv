@@ -1,0 +1,32 @@
+<section id="inicio" class="flex flex-col gap-1 justify-center items-center">
+  <h1 class="text-5xl text-center pb-4 font-semibold text-balance text-gray-900">Miroslava XV Años</h1>
+  <img src="miros.webp"
+       class=" max-w-xs"
+       alt="comision"/>
+  <p class="text-2xl">30 Diciembre 2025</p>
+  <p>San Pedro Comitancillo, Oaxaca</p>
+  <div class="flex gap-4 pt-10 justify-center text-center">
+    <div>
+      <div class="text-4xl">{{ days }}</div>
+      <div class="text-sm">Días</div>
+    </div>
+    <div>
+      <div class="text-4xl">{{ hours }}</div>
+      <div class="text-sm">Horas</div>
+    </div>
+    <div>
+      <div class="text-4xl">{{ minutes }}</div>
+      <div class="text-sm">Minutos</div>
+    </div>
+    <div>
+      <div class="text-4xl">{{ seconds }}</div>
+      <div class="text-sm">Segundos</div>
+    </div>
+  </div>
+  <a target="_blank" class="mt-5 w-fit rounded-2xl overflow-hidden block shadow"
+     [href]="createCalendar()">
+    <div class="flex items-center py-1 px-6 bg-white">
+      <span class="text-button flex-1">Agregar al Calendario</span>
+    </div>
+  </a>
+</section>
